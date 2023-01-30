@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>CV de Jennie Nichols</title>
+  <script>
+    function showMoreInfo(id) {
+      var element = document.getElementById(id);
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="#about-me">Acerca de mí</a>
+    <a href="#experience">Experiencia</a>
+    <a href="#education">Educación</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+  <div id="about-me">
+    <img src="https://randomuser.me/api/portraits/med/women/75.jpg" alt="Foto de perfil de Jennie Nichols">
+    <h1>Jennie Nichols</h1>
+    <p>Soy una mujer con experiencia en desarrollo de software y una educación sólida en informática. Estoy buscando oportunidades de trabajo en el campo de la tecnología.</p>
+    <button onclick="showMoreInfo('about-me-more')">Mostrar más información</button>
+    <div id="about-me-more" style="display:none;">
+      <p>Además de mi experiencia en desarrollo de software, también tengo habilidades en liderazgo de equipos y gestión de proyectos. Me gusta trabajar en un ambiente colaborativo y siempre estoy buscando maneras de mejorar mis habilidades y aprender nuevas tecnologías.</p>
+    </div>
+  </div>
+  <div id="experience">
+    <h2>Experiencia</h2>
+    <ul>
+      <li>Desarrollador de software en XYZ Inc. (2018-actualidad)</li>
+      <li>Jefe de proyecto en ABC Inc. (2015-2018)</li>
+    </ul>
+    <button onclick="showMoreInfo('experience-more')">Mostrar más información</button>
+    <div id="experience-more" style="display:none;">
+      <ul>
+        <li>Desarrollador Junior en LMN Inc. (2012-2015)</li>
+        <li>Pasante en PQR Inc. (2010-2012)</li>
+      </ul>
+    </div>
+  </div>
+  <div id="education">
+    <h2>Educación</h2>
+    <ul>
+      <li>Maestría en Informática en la Universidad XYZ (2013-2015)</li>
+      <li>Licenciatura en Informática en la Universidad ABC (2009-2013)</li>
+    </ul>
+  </div>
+  <div id="skills">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>C#</li>
+      <li>SQL</li>
+    </ul>
+    <button onclick="showMoreInfo('skills-more')">Mostrar más habilidades</button>
+    <div id="skills-more" style="display:none;">
+      <ul>
+        <li>Python</li>
+        <li>C++</li>
+        <li>PHP</li>
+        <li>Ruby</li>
+      </ul>
+    </div>
+  </div>
+  <div id="contact">
+    <h2>Contacto</h2>
+    <ul>
+        <li>Email: jennie.nichols@example.com</li>
+        <li>Teléfono: (272) 790-0888</li>
+        <li>Celular: (489) 330-2385</li>
+      </ul>
+    </div>
+    <script>
+      function showMoreInfo(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none") {
+          element.style.display = "block";
+        } else {
+          element.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+  </html>
